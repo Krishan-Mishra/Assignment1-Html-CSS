@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <!-- CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="main_container">
@@ -31,7 +39,35 @@
           </p>
         </div>
       </div>
-      <div class="right_container"></div>
+      <div class="right_container">
+        <div class="navbar">
+          <p id="n2">Request an Account</p>
+          <p id="n1">Not a member?</p>
+          <div style="clear: both"></div>
+        </div>
+        <div class="sign_in_box">
+          <h1>Sign in</h1>
+          <div class="input_container">
+            <div class="email_field">
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="password_field">
+              <input type="password" id="password" placeholder="Password" />
+              <span><i id="toggler" class="far fa-eye"></i></span>
+            </div>
+          </div>
+          <div class="forget_password">
+            <h1>FORGET PASSWORD</h1>
+            <div style="clear: both"></div>
+          </div>
+          <div class="login_button">
+            <button>LOGIN</button>
+          </div>
+        </div>
+        <div class="right_container_footer">
+          <p>&copy;2021 Compro Technologies All Right Reserved</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

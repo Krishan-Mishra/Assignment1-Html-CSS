@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #68009f;
-  font-size: 19px;
 }
 
 .main_container {
@@ -12,12 +11,14 @@ body {
 
 .left_container {
   width: 42%;
-  height: 100%;
+  font-size: 19px;
+  height: 100vh;
 }
 .right_container {
   background-color: white;
   width: 58%;
-  height: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .left_container div {
@@ -59,4 +60,126 @@ h5 {
 .left_container div p {
   padding-top: 8%;
   font-weight: 500;
+}
+
+.navbar {
+  padding-right: 1%;
+  padding-top: 0.6%;
+}
+
+.navbar p {
+  float: right;
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+#n1 {
+  padding-right: 1%;
+}
+
+#n2 {
+  color: #68009f;
+}
+
+.sign_in_box {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_in_box h1 {
+  margin: 0;
+}
+
+.input_container input {
+  display: block;
+  margin-top: 2%;
+}
+
+.password_field {
+  display: flex;
+}
+
+.password_field input {
+  width: 18rem;
+  height: 1em;
+  padding: 1em;
+  border: 0;
+  font-size: 1rem;
+  background-color: #f1eff1;
+}
+
+.email_field input {
+  width: 18rem;
+  height: 1em;
+  padding: 1em;
+  border: 0;
+  font-size: 1rem;
+  background-color: #f1eff1;
+}
+
+.password_field input::placeholder {
+  color: #9e9c9e;
+}
+
+.email_field input::placeholder {
+  color: #9e9c9e;
+}
+
+span {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  right: 25px;
+}
+
+.password_field #toggler {
+  cursor: pointer;
+}
+
+.forget_password {
+  width: 19.9rem;
+}
+.forget_password h1 {
+  margin: 0;
+  float: right;
+  padding-top: 2%;
+  font-size: 0.7em;
+  color: #68009f;
+  font-weight: bolder;
+}
+
+.login_button {
+  width: 19.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.login_button button {
+  width: 12em;
+  border-radius: 3px;
+  margin-top: 4%;
+  padding: 0.6em;
+  background-color: #b9b7b9;
+  color: #757475;
+  border: none;
+}
+
+.right_container_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.right_container_footer p {
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
