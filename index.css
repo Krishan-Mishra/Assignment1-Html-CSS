@@ -1,35 +1,37 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  background-color: #68009f;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .main_container {
-  height: 100vh;
   display: flex;
+  height: 100vh;
 }
 
 .left_container {
   background-color: #68009f;
-  width: 42%;
   font-size: 19px;
   height: 100%;
+  width: 42%;
 }
+
 .right_container {
-  position: relative;
   background-color: white;
+  position: relative;
   width: 58%;
 }
 
 .left_container div {
+  color: white;
   padding-left: 6%;
   padding-top: 10%;
-  color: white;
 }
 
 .left_container div h3,
@@ -42,28 +44,29 @@ h5 {
 
 .left_container div h2 {
   font-weight: bolder;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   padding-top: 1%;
 }
+
 .left_container div h3 {
   font-weight: bolder;
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 
 .left_container div h5 {
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   padding-top: 1%;
 }
 
 .left_container div hr {
-  width: 90%;
   margin-top: 1%;
+  width: 90%;
 }
 
 .left_container div p {
-  padding-top: 8%;
   font-weight: 500;
+  padding-top: 8%;
 }
 
 .navbar {
@@ -72,27 +75,26 @@ h5 {
 }
 
 .navbar p {
-  float: right;
   display: inline;
-  font-size: 0.8rem;
+  float: right;
+  font-size: 0.8em;
   font-weight: bolder;
 }
 
-#n1 {
+.n1 {
   padding-right: 1%;
 }
 
-#n2 {
+.n2 {
   color: #68009f;
 }
 
 .sign_in_box {
-  /* padding-top: 18%; */
-  margin-top: 18%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-top: 18%;
 }
 
 .sign_in_box h1 {
@@ -113,21 +115,21 @@ h5 {
 }
 
 .password_field input {
-  width: 18rem;
-  height: 1em;
-  padding: 1em;
+  background-color: #f1eff1;
   border: 0;
   font-size: 1rem;
-  background-color: #f1eff1;
+  height: 1em;
+  padding: 1em;
+  width: 18rem;
 }
 
 .email_field input {
-  width: 18rem;
-  height: 1em;
-  padding: 1em;
+  background-color: #f1eff1;
   border: 0;
   font-size: 1rem;
-  background-color: #f1eff1;
+  height: 1em;
+  padding: 1em;
+  width: 18rem;
 }
 
 .password_field input::placeholder {
@@ -142,58 +144,60 @@ span {
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
-  right: 25px;
+  right: 1.5625rem;
 }
 
-.password_field #toggler {
+.password_field .toggler {
   cursor: pointer;
 }
 
 .forget_password {
   width: 17rem;
 }
+
 .forget_password h1 {
-  margin: 0;
-  float: right;
-  padding-top: 2%;
-  font-size: 0.7em;
   color: #68009f;
+  float: right;
+  font-size: 0.7em;
   font-weight: bolder;
+  margin: 0;
+  padding-top: 2%;
 }
 
 .login_button {
-  width: 19.9rem;
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  width: 19.9rem;
 }
 
 .login_button button {
-  width: 12em;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
+  background-color: #b9b7b9;
+  border: none;
+  color: #757475;
   margin-top: 4%;
   padding: 0.6em;
-  background-color: #b9b7b9;
-  color: #757475;
-  border: none;
+  width: 12rem;
 }
 
 .right_container_footer {
-  position: absolute;
   bottom: 0;
-  width: 100%;
+  position: absolute;
   text-align: center;
+  width: 100%;
 }
 
 .right_container_footer p {
   font-size: 0.8rem;
   font-weight: bolder;
 }
-#mobile_device_footer {
+
+.mobile_device_footer {
   display: none;
 }
 
-#mobile_navbar {
+.mobile_navbar {
   display: none;
 }
 
@@ -203,10 +207,11 @@ span {
   .right_container_footer {
     display: none;
   }
-  #mobile_device_footer {
+
+  .mobile_device_footer {
+    color: white;
     display: block;
     text-align: center;
-    color: white;
   }
 
   .left_container div p {
@@ -214,15 +219,17 @@ span {
   }
 
   .main_container {
-    flex-direction: column;
     background-color: #68009f;
+    flex-direction: column;
     height: 100%;
   }
+
   .left_container,
   .right_container {
-    width: 100%;
     background-color: #68009f;
+    width: 100%;
   }
+
   .left_container div {
     padding: 0%;
     padding-top: 5%;
@@ -231,36 +238,40 @@ span {
 
   .sign_in_box {
     background-color: white;
-    border-radius: 10px;
-    /* padding-top: 1%; */
-    width: 43%;
+    border-radius: 0.625rem;
     height: 20rem;
     margin: 0 auto;
     margin-top: 2%;
+    width: 43%;
   }
 
-  #laptop_navbar {
+  .laptop_navbar {
     display: none;
   }
-  #mobile_navbar {
+
+  .mobile_navbar {
     display: block;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     padding-top: 3%;
     width: 100%;
-    justify-content: center;
   }
-  #n1_mobile {
+
+  .n1_mobile {
     font-weight: bolder;
   }
-  #n2_mobile {
+
+  .n2_mobile {
     color: #68009f;
     font-weight: bolder;
     padding-left: 5%;
   }
+
   hr {
     display: none;
   }
+
   .sign_in_box h1 {
     padding-top: 2%;
   }
@@ -270,10 +281,11 @@ span {
   .right_container_footer {
     display: none;
   }
-  #mobile_device_footer {
+
+  .mobile_device_footer {
+    color: white;
     display: block;
     text-align: center;
-    color: white;
   }
 
   .left_container div p {
@@ -281,15 +293,17 @@ span {
   }
 
   .main_container {
-    flex-direction: column;
     background-color: #68009f;
+    flex-direction: column;
     height: 100%;
   }
+
   .left_container,
   .right_container {
-    width: 100%;
     background-color: #68009f;
+    width: 100%;
   }
+
   .left_container div {
     padding: 0%;
     padding-top: 5%;
@@ -298,16 +312,18 @@ span {
 
   .sign_in_box {
     background-color: white;
-    border-radius: 10px;
-    width: 55%;
+    border-radius: 0.625rem;
     height: 23rem;
     margin: 0 auto;
     margin-top: 2%;
+    width: 55%;
   }
-  #laptop_navbar {
+
+  .laptop_navbar {
     display: none;
   }
-  #mobile_navbar {
+
+  .mobile_navbar {
     display: block;
     display: flex;
     flex-direction: row-reverse;
@@ -315,14 +331,17 @@ span {
     padding-top: 3%;
     width: 100%;
   }
-  #n1_mobile {
+
+  .n1_mobile {
     font-weight: bolder;
   }
-  #n2_mobile {
+
+  .n2_mobile {
     color: #68009f;
     font-weight: bolder;
     padding-left: 5%;
   }
+
   hr {
     display: none;
   }
@@ -337,11 +356,13 @@ span {
   .password_field input {
     width: 15rem;
   }
+
   .input_container {
     padding-left: 3%;
   }
-  #n1_mobile,
-  #n2_mobile {
+
+  .n1_mobile,
+  .n2_mobile {
     font-size: 0.9rem;
   }
 }
@@ -350,6 +371,7 @@ span {
   .left_container {
     font-size: 1.2rem;
   }
+
   .sign_in_box {
     width: 80%;
   }
