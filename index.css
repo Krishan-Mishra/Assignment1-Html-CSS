@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #68009f;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.main_container {
+  display: flex;
+  height: 100vh;
+}
+
+.left_container {
+  background-color: #68009f;
+  font-size: 19px;
+  height: 100%;
+  width: 42%;
+}
+
+.right_container {
+  background-color: white;
+  position: relative;
+  width: 58%;
+}
+
+.left_container div {
+  color: white;
+  padding-left: 6%;
+  padding-top: 10%;
+}
+
+.left_container div h3,
+h2,
+hr,
+p,
+h5 {
+  margin: 0;
+}
+
+.left_container div h2 {
+  font-weight: bolder;
+  font-size: 2.3em;
+  padding-top: 1%;
+}
+
+.left_container div h3 {
+  font-weight: bolder;
+  font-size: 1.4em;
+}
+
+.left_container div h5 {
+  font-weight: bolder;
+  font-size: 1.3em;
+  padding-top: 1%;
+}
+
+.left_container div hr {
+  margin-top: 1%;
+  width: 90%;
+}
+
+.left_container div p {
+  font-weight: 500;
+  padding-top: 8%;
+}
+
+.navbar {
+  padding-right: 1%;
+  padding-top: 0.6%;
+}
+
+.navbar p {
+  display: inline;
+  float: right;
+  font-size: 0.8em;
+  font-weight: bolder;
+}
+
+.n1 {
+  padding-right: 1%;
+}
+
+.n2 {
+  color: #68009f;
+}
+
+.sign_in_box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 18%;
+}
+
+.sign_in_box h1 {
+  margin: 0;
+}
+
+.input_container {
+  margin-top: 2%;
+}
+
+.input_container input {
+  display: block;
+  margin-top: 2%;
+}
+
+.password_field {
+  display: flex;
+}
+
+.password_field input {
+  background-color: #f1eff1;
+  border: 0;
+  font-size: 1rem;
+  height: 1em;
+  padding: 1em;
+  width: 18rem;
+}
+
+.email_field input {
+  background-color: #f1eff1;
+  border: 0;
+  font-size: 1rem;
+  height: 1em;
+  padding: 1em;
+  width: 18rem;
+}
+
+.password_field input::placeholder {
+  color: #9e9c9e;
+}
+
+.email_field input::placeholder {
+  color: #9e9c9e;
+}
+
+span {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  right: 1.5625rem;
+}
+
+.password_field .toggler {
+  cursor: pointer;
+}
+
+.forget_password {
+  width: 17rem;
+}
+
+.forget_password h1 {
+  color: #68009f;
+  float: right;
+  font-size: 0.7em;
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 2%;
+}
+
+.login_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  width: 19.9rem;
+}
+
+.login_button button {
+  border-radius: 0.1875rem;
+  background-color: #b9b7b9;
+  border: none;
+  color: #757475;
+  margin-top: 4%;
+  padding: 0.6em;
+  width: 12rem;
+}
+
+.right_container_footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.right_container_footer p {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.mobile_device_footer {
+  display: none;
+}
+
+.mobile_navbar {
+  display: none;
+}
+
+/* Adding Media Queries  */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .right_container_footer {
+    display: none;
+  }
+
+  .mobile_device_footer {
+    color: white;
+    display: block;
+    text-align: center;
+  }
+
+  .left_container div p {
+    padding-top: 2%;
+  }
+
+  .main_container {
+    background-color: #68009f;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left_container,
+  .right_container {
+    background-color: #68009f;
+    width: 100%;
+  }
+
+  .left_container div {
+    padding: 0%;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .sign_in_box {
+    background-color: white;
+    border-radius: 0.625rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 43%;
+  }
+
+  .laptop_navbar {
+    display: none;
+  }
+
+  .mobile_navbar {
+    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+
+  .n1_mobile {
+    font-weight: bolder;
+  }
+
+  .n2_mobile {
+    color: #68009f;
+    font-weight: bolder;
+    padding-left: 5%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .sign_in_box h1 {
+    padding-top: 2%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .right_container_footer {
+    display: none;
+  }
+
+  .mobile_device_footer {
+    color: white;
+    display: block;
+    text-align: center;
+  }
+
+  .left_container div p {
+    padding-top: 2%;
+  }
+
+  .main_container {
+    background-color: #68009f;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left_container,
+  .right_container {
+    background-color: #68009f;
+    width: 100%;
+  }
+
+  .left_container div {
+    padding: 0%;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .sign_in_box {
+    background-color: white;
+    border-radius: 0.625rem;
+    height: 23rem;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 55%;
+  }
+
+  .laptop_navbar {
+    display: none;
+  }
+
+  .mobile_navbar {
+    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+
+  .n1_mobile {
+    font-weight: bolder;
+  }
+
+  .n2_mobile {
+    color: #68009f;
+    font-weight: bolder;
+    padding-left: 5%;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  .sign_in_box {
+    width: 60%;
+  }
+
+  .email_field input,
+  .password_field input {
+    width: 15rem;
+  }
+
+  .input_container {
+    padding-left: 3%;
+  }
+
+  .n1_mobile,
+  .n2_mobile {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .left_container {
+    font-size: 1.2rem;
+  }
+
+  .sign_in_box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .sign_in_box {
+    width: 90%;
+  }
+}
